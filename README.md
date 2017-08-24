@@ -1,2 +1,4 @@
 # Flo-Startup-Variables
-The start script for the Flo Service in Pterodactyl
+This should be added to the panel under a Service, For this exmaple it is a sub option of the minecraft service, it will automatically generate the `start.sh` file inside the server and we be ready for action!
+
+**Make sure** to also update the Docker container to `thefonix/flo` as this has all of the dependencies for the flo startup system to work.
