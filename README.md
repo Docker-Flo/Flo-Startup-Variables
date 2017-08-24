@@ -5,19 +5,9 @@ This should be added to the panel under a Service, For this exmaple it is a sub 
 
 ```
 ╭━━━┳╮    
-```
-```
 ┃╭━━┫┃    
-```
-```
 ┃╰━━┫┃╭━━╮
-```
-```
 ┃╭━━┫┃┃╭╮┃
-```
-```
 ┃┃╱╱┃╰┫╰╯┃
-```
-```
 ╰╯╱╱╰━┻━━╯
 ```
