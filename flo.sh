@@ -10,7 +10,7 @@ echo '#!/bin/bash
 SERVERLOC="/home/container"
 
 #CorinthMC Flo Starter
-echo " ______  ___      _______  "
+echo " _______  ___      _______  "
 echo "|       ||   |    |       |"
 echo "|    ___||   |    |   _   |"
 echo "|   |___ |   |    |  | |  |"
@@ -35,7 +35,7 @@ echo "          v4.2"
   fi
 
 cd $SERVERLOC
-  git clone https://*:*@git.corinthmc.com:443/Project . 2> /dev/null
+  git clone --quiet https://*:*@git.corinthmc.com:443/Corinth/Flo/flo-1.9.git .
 
 sleep 1
   mkdir -p /tmp
