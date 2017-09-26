@@ -26,41 +26,22 @@ echo "          v4.2"
   sleep 2
 
 #Move and Empty the Directory & Refil from the Git into $SERVERLOC
-echo -ne "#                         (0%)\r"
-sleep 1
   if [ "$(ls -A $SERVERLOC)" ];
-
     then
-      echo -ne "##                        (5%)\r"
-      sleep 1
-      mv start.sh /tmp & echo -ne "###                       (15%)\r"
-      sleep 1
-      mv server.properties /tmp & echo -ne "####                      (24%)\r"
-      sleep 1
       rm -rf $SERVERLOC/* 2> /dev/null
-      echo -ne "######                    (31%)\r"
-      sleep 1
       rm -rf $SERVERLOC/.* 2> /dev/null
-      echo -ne "########                  (43%)\r"
-      sleep 1
-
     else
+      echo "Welcome first time user!"
   fi
 
 cd $SERVERLOC
- echo -ne "##########                (58%)\r"
- sleep 1
-  git clone https://*.*@git.corinthmc.com:443/Follow . 2> /dev/null
-    echo -ne "##################        (75%)\r"
-    sleep 1
+  git clone https://*:*@git.corinthmc.com:443/Project . 2> /dev/null
 
-echo -ne "########################  (94%)\r"
 sleep 1
-  mv /tmp/start.sh . > /dev/null
-    mv /tmp/server.properties . > /dev/null
+  mkdir -p /tmp
+    mv /tmp/start.sh /home/container/ 2> /dev/null
+      mv /tmp/server.properties /home/container/ 2> /dev/null
 
-echo -ne "##########################(100%)\r"
-sleep 1
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 echo "----> All Tasks have been complete! Starting Server <----"
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
