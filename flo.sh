@@ -35,6 +35,7 @@ cd $SERVERLOC
   
   #Build the CPU and Ram Variables for the system!
   echo 'INTERNAL_CPU_USAGE="grep 'cpu ' /proc/stat | awk '{usage=($2+$4)*100/($2+$4+$5)} END {print usage}'"' >> /etc/profile
+  #NO RAM METHOD YET
   
   #Git pulling (Without Debug info, so we dont spam the console)
   git clone --quiet https://*@*git.corinthmc.com:443/Corinth/Flo/flo-1.9.git . 2> /dev/null
